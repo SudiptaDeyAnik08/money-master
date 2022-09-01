@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Money Monster </title>
+
+
+    <!-- Tailwind CSS CDN added here -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <style>
+        .common{
+            margin-bottom:10px;
+            margin-top: 20px;
+            text-align: center;
+            font-size: 20px;
+        }
+    </style>
+</head>
+<body>
+    <header class="w-4/12 mx-auto mt-5" >
+        <img  src="assets/images/heading.png" alt="">
+    </header>
+
+    <main>
+
+        <section class="grid grid-cols-2 gap-4 ">
+
+            <div class="mt-10">
+                <img class="h-screen ml-5   " src="assets/images/money.png" alt="">
+
+            </div >
+
+            <div class="mt-10   mr-5	bg-neutral-200	">
+                <h1 class="text-3xl text-center mt-5">Income</h1>
+                
+                <div class="common">
+                    <p class="inline-block	">Income:</p>
+                    <input id="income-id" class="inline-block	" type="text">
+                </div>
+
+                <h1 class="text-3xl text-center mt-5">Expenses</h1>
+
+                <div class="common">
+                    <p class="inline-block	">Food: </p>
+                    <input id="food-id" class="inline-block	ml-2" type="text">
+                </div>
+
+                <div class="common">
+                    <p class="inline-block	">Rent: </p>
+                    <input id="rent-id" class="inline-block 	ml-4" type="text">
+                </div>
+
+                <div class="common">
+                    <p class="inline-block	">Cloths: </p>
+                    <input id="cloths-id" class="inline-block	" type="text">
+                </div>
+
+                <div class="common">
+                    <button id="calculate-btn" class=" text-white bg-sky-500 common rounded	pl-4 pr-4 pt-2 pb-2">Calculate </button>
+                </div>
+
+                <h3 class="common">Total Expenses: <span id="total-expenses-id">0</span>  </h3>
+
+                <h3 class="common">Balance:<span id="balance-id">0</span>  </h3>
+
+                <div class="common">
+                    <p class="inline-block	">Savings: </p>
+                    <input id='Savings-id' class="inline-block	" type="text"> 
+                    <p class="inline-block"> % </p>
+
+                    <button class="text-white inline-block bg-sky-500 common rounded	pl-6 pr-6 pt-2 pb-2" id="saving-btn">Save </button>
+                </div>
+
+                <h3 class="common">Saving Amount:<span id="saving-amount">0</span></h3>
+                <h3 class="common">Remaining Balance:<span id="remaning-balance">0</span></h3>
+
+
+            </div>
+
+        </section>
+
+
+    </main>
+
+
+
+    <script src="js/calculation.js"></script>
+    <script src="js/saving.js" ></script>
+</body>
+</html>
